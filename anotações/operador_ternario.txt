@@ -1,0 +1,6 @@
+// teste ? "true" : "false"
+
+exemple:  var idade = 17
+
+console.log (idade >= 18? 'maior de idade': 'menor de idade')
+
