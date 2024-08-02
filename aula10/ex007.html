@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#resultado{
+            font: 25px arial;
+        }
+        input{
+            width: 60px;
+            background-color: beige;
+            
+        }
+        input#executar{
+           background-color: rgb(0, 61, 173); 
+           color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="tx1" id="tx1">
+    <input type="number" name="tx2" id="tx2">
+    <input type="button" value="Somar" onclick="soma()" id="executar">
+    <div id="resultado">Resultado</div>
+
+    <script>
+        function soma() {
+            var valor1 = Number (document.getElementById('tx1').value)
+            var valor2 = Number (document.querySelector('input#tx2').value)
+            var result = valor1 + valor2
+            var resultado = document.getElementById('resultado')
+            resultado.innerText = result
+            
+        }
+    </script>
+</body>
+</html>
